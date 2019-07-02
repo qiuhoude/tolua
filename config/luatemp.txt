@@ -1,0 +1,8 @@
+{{define "lua"}}return {
+	title={ {{printTitle .ColumnName}} }, {{$length :=(len .ColumnValues)}}
+		records={
+			{{- range $index,$data := .ColumnValues }}
+			{ {{- printSlice $data.Data -}} } {{- printComma $length $index -}} {{ end }}
+		}
+}
+{{end}}

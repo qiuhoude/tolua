@@ -1,0 +1,8 @@
+{
+  "user": "root",
+  "pwd": "root",
+  "host": "127.0.0.1",
+  "port": "3306",
+  "dbName": "honor_ini",
+  "dbParam": ""
+}
